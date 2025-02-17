@@ -4,8 +4,13 @@ A Streamlit-based interactive application designed to help data scientists, engi
 
 ## Dashboard
 
-![image](https://github.com/user-attachments/assets/06285f33-eb6c-4941-a0e8-517d1542b8dc)
-*Query Data Analysis Dashboard*
+![image](https://github.com/user-attachments/assets/830e49ae-9064-4bd3-81fa-aa7877c9ab2b)
+*Query Data Analysis Dashboard, scenario 1*
+
+---
+
+![image](https://github.com/user-attachments/assets/5e5d4cc6-6a77-492b-9ae1-e0daf2d64d43)
+*Query Data Analysis Dashboard, scenario 2 *
 
 ## Features
 
