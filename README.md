@@ -89,6 +89,36 @@ By identifying clusters, you can see which queries require similar tuning or sha
     - Top 10 Outliers: Automatically detect the queries that deviate the most.
 5. **Refine**: Adjust filters to zoom into certain query ranges (e.g., high latency only).
 
+# Required dataset
+
+| **Field**            | **Example Value**                                       | **Explanation**                                                                                                                               |
+|----------------------|---------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| **Timestamp**        | `2025-02-16T18:15:36.919912`                            | The date and time at which the query metrics were recorded.                                                                                   |
+| **Tag**              | `ExampleClass.LargeQuery_9`                             | A human-readable or programmatic label used to identify this particular query or code path.                                                   |
+| **Query**            | `SELECT col1, col2, col3, ... FROM ExampleTable ...`    | The actual SQL query text that was executed.                                                                                                  |
+| **AnalysisTimeMs**   | `1339.7654`                                             | Time (in milliseconds) taken for analysis before execution (e.g., parsing, planning).                                                         |
+| **RowCount**         | `99596`                                                 | Number of rows returned or processed by the query.                                                                                            |
+| **ColumnCount**      | `20`                                                    | Number of columns involved (selected or processed) in the query.                                                                              |
+| **BuffersReceived**  | `7`                                                     | Count of buffer messages received from the server (specific to some database drivers).                                                        |
+| **BuffersSent**      | `14`                                                    | Count of buffer messages sent to the server.                                                                                                  |
+| **BytesReceived**    | `211434`                                                | Total bytes received from the server during query execution.                                                                                  |
+| **BytesSent**        | `6899`                                                  | Total bytes sent to the server during query execution.                                                                                        |
+| **CursorOpens**      | `0`                                                     | Number of cursor opens (if the database driver supports cursor-based queries).                                                                |
+| **IduCount**         | `0`                                                     | Number of insert/delete/update (IDU) operations executed within this context.                                                                 |
+| **IduRows**          | `0`                                                     | Number of rows affected by IDU operations.                                                                                                    |
+| **PreparedExecs**    | `0`                                                     | Count of prepared query executions (if the driver/database supports prepared statements).                                                     |
+| **Prepares**         | `0`                                                     | Number of times a query was prepared.                                                                                                         |
+| **SelectCount**      | `0`                                                     | Number of SELECT statements executed in this context.                                                                                         |
+| **SelectRows**       | `0`                                                     | Number of rows returned by SELECT statements (if tracked separately).                                                                        |
+| **ServerRoundtrips** | `10`                                                    | Number of client-server round trips for the query execution.                                                                                  |
+| **SumResultSets**    | `0`                                                     | Summation of all result sets returned (if queries can produce multiple result sets).                                                         |
+| **Transactions**     | `0`                                                     | Number of transactions opened or committed in this context.                                                                                   |
+| **UnpreparedExecs**  | `9`                                                     | Count of non-prepared (direct) query executions.                                                                                              |
+| **ConnectionTime**   | `919`                                                   | Duration (in milliseconds) spent establishing the connection or reusing a pooled connection.                                                 |
+| **ExecutionTime**    | `0`                                                     | Time (in milliseconds) for the query execution phase (excluding preparation, analysis, etc.).                                                |
+| **NetworkServerTime**| `124`                                                   | Time (in milliseconds) spent on network and server-side overhead (as tracked by the client or driver).                                       |
+*Supported data for the dashboard*
+
 # Contributing
 
 1. **Fork** the repo.
