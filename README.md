@@ -10,40 +10,40 @@ A Streamlit-based interactive application designed to help data scientists, engi
 ## Features
 
 1. **Interactive Data Loading**
-  - Supports JSON or JSONL files for uploading metrics.
-  - Automatically detects JSON vs. JSONL to parse.
-  - Displays initial dataset shape and previews data.
+    - Supports JSON or JSONL files for uploading metrics.
+    - Automatically detects JSON vs. JSONL to parse.
+    - Displays initial dataset shape and previews data.
 
 2. **PCA Visualizations**
 
-  - 2D PCA Scatter Plot and (when applicable) 3D PCA Scatter Plot.
-  - Dynamically adjusts the PCA components based on selected numeric columns.
-  - Hover over points to see Tag info (which query is being displayed).
+    - 2D PCA Scatter Plot and (when applicable) 3D PCA Scatter Plot.
+    - Dynamically adjusts the PCA components based on selected numeric columns.
+    - Hover over points to see Tag info (which query is being displayed).
 
 3. **Clustering Algorithms**
 
-  - KMeans, DBSCAN, or AgglomerativeClustering to cluster your queries.
-  - Choose the desired number of clusters or tweak DBSCAN parameters.
-  - Helps quickly group queries with similar performance characteristics.
+    - KMeans, DBSCAN, or AgglomerativeClustering to cluster your queries.
+    - Choose the desired number of clusters or tweak DBSCAN parameters.
+    - Helps quickly group queries with similar performance characteristics.
 
 4. **Outlier Detection**
 
-  - Quickly identify top 10 “problematic” queries based on a z-score of a selected metric.
-  - Outliers are queries significantly higher (z-score) than the average.
+    - Quickly identify top 10 “problematic” queries based on a z-score of a selected metric.
+    - Outliers are queries significantly higher (z-score) than the average.
 
 5. **Interactive Box Plot**
 
-  - Box plot grouped by Tag, showing outliers and distribution of a selected numeric metric.
-  - Hover tooltips highlight individual Tag details.
+    - Box plot grouped by Tag, showing outliers and distribution of a selected numeric metric.
+    - Hover tooltips highlight individual Tag details.
 
 6. **Additional Graphs**
 
-  - Histogram of a selected metric.
-  - Scatter Plot of two numeric columns to visualize relationships.
-  - Bar Plot of average metric grouped by Tag.
+    - Histogram of a selected metric.
+    - Scatter Plot of two numeric columns to visualize relationships.
+    - Bar Plot of average metric grouped by Tag.
 
 7. **Dynamic Filtering**
-  - Filter your data on any numeric column range to focus on specific segments.
+    - Filter your data on any numeric column range to focus on specific segments.
 
 # Why Clustering for Query Performance?
 
@@ -79,9 +79,9 @@ By identifying clusters, you can see which queries require similar tuning or sha
 2. **Select Numeric Columns**: Pick columns like `latency`, `execution_time`, or any other performance-related metrics.
 3. **Clustering**: Choose between `KMeans`, `DBSCAN`, or `AgglomerativeClustering` and tweak the parameters (like n_clusters, eps, etc.).
 4. **Explore Visuals**:
-  - PCA 2D/3D: Quickly see if certain clusters have distinct performance.
-  - Box Plot: Pinpoint outliers or wide distributions for each query Tag.
-  - Top 10 Outliers: Automatically detect the queries that deviate the most.
+    - PCA 2D/3D: Quickly see if certain clusters have distinct performance.
+    - Box Plot: Pinpoint outliers or wide distributions for each query Tag.
+    - Top 10 Outliers: Automatically detect the queries that deviate the most.
 5. **Refine**: Adjust filters to zoom into certain query ranges (e.g., high latency only).
 
 # Contributing
