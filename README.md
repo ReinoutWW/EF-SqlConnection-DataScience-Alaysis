@@ -76,7 +76,7 @@ By identifying clusters, you can see which queries require similar tuning or sha
    streamlit run QueryPerfDashboard.py
    ```
 4. Open the application in your browser at the URL displayed in the terminal, typically `http://localhost:8501.`
-5. Upload a `JSON` or `JSONL` metrics file. Select numeric columns for PCA and clustering, choose your clustering algorithm, and explore the various plots.
+5. Upload a `JSON` or `JSONL` metrics file. Select numeric columns for PCA and clustering, choose your clustering algorithm, and explore the various plots. There's a `example-dataset.jsonl` included in the repository to play around with dummy data.
 
 # Example Usage
 
